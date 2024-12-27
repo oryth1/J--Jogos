@@ -1,0 +1,52 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+-- Configuração da interface
+local Window = Rayfield:CreateWindow({
+    Name = "Oryh Hub | Universal BR | Jujutsu Infinite", 
+    LoadingTitle = "Carregando Jujutsu Infinite",
+    LoadingSubtitle = "Por favor, aguarde...",
+    ConfigurationSaving = {
+        Enabled = true,
+        FolderName = "OryhHubConfigs", -- Pasta para salvar configurações
+        FileName = "UniversalScript"
+    },
+    Discord = {
+        Enabled = false,
+        Invite = "", -- Adicione um convite do Discord se necessário
+        RememberJoins = true
+    },
+    KeySystem = false -- Sistema de chave desativado
+})
+
+-- Função para criar botões que executam scripts
+local function AddScriptButton(tab, name, url)
+    tab:CreateButton({
+        Name = name,
+        Callback = function()
+            loadstring(game:HttpGet(url))()
+            Rayfield:Notify({
+                Title = "Oryh Hub",
+                Content = name .. " carregado com sucesso!",
+                Duration = 5
+            })
+        end
+    })
+end
+
+-- >[Início]<
+
+local InicioTab = Window:CreateTab("Início")
+
+AddScriptButton(InicioTab, "Prime Hub", "https://raw.githubusercontent.com/Mixplaylikeencoder/Games/refs/heads/main/JJI")
+AddScriptButton(InicioTab, "Legend Handless", "https://raw.githubusercontent.com/IAmJamal10/Infinite/refs/heads/main/Jujutsu")
+AddScriptButton(InicioTab, "Cocat Hub", "https://api.luarmor.net/files/v3/loaders/8d3f3c80bffcd557ea143d2f7ac47ef6.lua")
+AddScriptButton(InicioTab, "NS Hub", "https://raw.githubusercontent.com/OhhMyGehlee/Infinite/refs/heads/main/All")
+AddScriptButton(InicioTab, "EclipseX Hub", "https://raw.githubusercontent.com/JackCSTM/eclipsex/main/script")
+
+
+-- Mensagem inicial
+Rayfield:Notify({
+    Title = "Jujutsu Infinite",
+    Content = "Carregando scripts...",
+    Duration = 5
+})
