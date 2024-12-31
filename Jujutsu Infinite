@@ -36,15 +36,15 @@ end
 -- >[Início]<
 
 local InicioTab = Window:CreateTab("Início")
-
+AddScriptButton(InicioTab, "Speed Hub", "https://raw.githubusercontent.com/AhmadV99/Script-Games/refs/heads/main/Jujutsu%20Infinite.lua"))()")
 AddScriptButton(InicioTab, "Prime Hub", "https://raw.githubusercontent.com/Mixplaylikeencoder/Games/refs/heads/main/JJI")
 AddScriptButton(InicioTab, "Legend Handless", "https://raw.githubusercontent.com/IAmJamal10/Infinite/refs/heads/main/Jujutsu")
 AddScriptButton(InicioTab, "Cocat Hub", "https://api.luarmor.net/files/v3/loaders/8d3f3c80bffcd557ea143d2f7ac47ef6.lua")
 AddScriptButton(InicioTab, "NS Hub", "https://raw.githubusercontent.com/OhhMyGehlee/Infinite/refs/heads/main/All")
 AddScriptButton(InicioTab, "EclipseX Hub", "https://raw.githubusercontent.com/JackCSTM/eclipsex/main/script")
 AddScriptButton(InicioTab, "Speed X Hub", "https://raw.githubusercontent.com/AhmadV99/Script-Games/refs/heads/main/Jujutsu%20Infinite.lua")
-AddScriptButton(InicioTab, "El gato Hub", "https://raw.githubusercontent.com/ScriptBrv/TheBestScript/refs/heads/main/TBS.md")
-
+AddScriptButton(InicioTab, "El gato Hub", "https://raw.githubusercontent.com/meobeo8/elgato/a/Loader"))()")
+AddScriptButton(InicioTab, "LN Hub", "https://rawscripts.net/raw/RELEASE-Jujutsu-Infinite-Insta-kill-all-mobs-25282"))()")
 
 -- Mensagem inicial
 Rayfield:Notify({
